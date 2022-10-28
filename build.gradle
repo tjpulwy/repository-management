@@ -11,8 +11,7 @@ repositories {
     gradlePluginPortal()
 }
 pluginBundle {  // Removed in Gradle 8+
-    website = 'https://github.com/johndoe/GradlePlugins'
-    vcsUrl = 'https://github.com/johndoe/GradlePlugins'
+    website = 'https://github.com/tjpulwy/repository-management'
 
     description = 'Spring project repositories management'
 
