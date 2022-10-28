@@ -1,0 +1,33 @@
+plugins {
+    id 'java-gradle-plugin'
+    id 'com.gradle.plugin-publish' version '1.0.0'
+}
+
+group 'io.spring'
+version '1.0'
+
+repositories {
+    mavenCentral()
+    gradlePluginPortal()
+}
+pluginBundle {  // Removed in Gradle 8+
+    website = 'https://github.com/johndoe/GradlePlugins'
+    vcsUrl = 'https://github.com/johndoe/GradlePlugins'
+
+    description = 'Spring project repositories management'
+
+    tags = ['Spring', 'Gradle', 'repositories', 'plugins']
+
+    pluginTags = [
+            repositoryPlugin: ['Spring', 'Gradle', 'repositories']
+    ]
+}
+
+gradlePlugin {
+    plugins {
+        repositoryPlugin {
+            id = "io.spring.repository-management"
+            implementationClass = "io.spring.gradle.plugin.RepositoryPlugin"
+        }
+    }
+}
