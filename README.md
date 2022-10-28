@@ -3,6 +3,6 @@ Spring project repositories management
 
 ···
 plugins {
-  id "io.spring.repository-management" version "1.0"
+  id "org.kolibro.repository-management" version "1.0"
 }
 ···
