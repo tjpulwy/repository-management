@@ -1,8 +1,10 @@
 # repository-management
 Spring project repositories management
 
-···
+```groovy
+
 plugins {
-  id "org.kolibro.repository-management" version "1.0"
+  id "io.spring.repository-management" version "1.0"
 }
-···
+
+```
